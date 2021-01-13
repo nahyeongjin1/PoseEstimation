@@ -29,6 +29,7 @@ while True:
     if not ret: break
     if cv2.waitKey(delay) >= 0: break
 
+    frame = frame[:, ::-1]
     writer.write(frame)
     cv2.imshow("View Frame from Camera", frame)
 
