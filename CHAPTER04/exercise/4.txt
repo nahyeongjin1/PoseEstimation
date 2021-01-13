@@ -1,0 +1,13 @@
+4. OpenCV이 제공하는, 마우스 이벤트와 트랙바 이벤트를 제어할 콜백 함수를 시스템에 등록하는 함수는 각각 무엇이며, 인수가 어떻게 구성되었는지 자세히 설명하시오.
+
+마우스 콜백 함수를 시스템에 등록하는 함수 => setMouseCallback(windowName, onMouse, param=None)
+==windowName 이벤트 발생을 확인할 윈도우 이름, 문자열
+==onMouse       마우스 이벤트를 처리하는 콜백 함수 이름(콜백함수)
+==param          이벤트 처리 함수로 전달할 추가적인 사용자 정의 인수
+
+트랙바 콜백 함수를 시스템에 등록하는 함수 => cv2.createTrackbar(trackbarName, windowName, value, count, onChange)
+==trackbarName 윈도우에 생성되는 트랙바 이름
+==windowName  트랙바의 부모 윈도우 이름(트랙바 이벤트 발생을 체크하는 윈도우)
+==value            트랙바 슬라이더의 위치를 반영하는 값(정수)
+==count            트랙바 슬라이더의 최댓값, 최솟값은 항상 0
+==onChange      트랙바 슬라이더의 값이 변경될 때 호출되는 콜백 함수
