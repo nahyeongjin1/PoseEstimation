@@ -1,0 +1,7 @@
+3. 행렬(ndarray)을 초기화하는 방법들에 대해서 기술하고, 각 방법으로 선언하시오.
+
+np.array()에 리스트를 넣어서 선언
+np.zeros()에 사이즈를 넣어서 선언
+np.ones()에 사이즈를 넣어서 선언
+np.full()에 사이즈와 채워넣고 싶은 값을 넣어서 선언
+np.eye()에 n을 넣으면 n by n Identity matrix 생성
