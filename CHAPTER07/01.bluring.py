@@ -4,7 +4,7 @@ import numpy as np, cv2
 def filter(image, mask):
     rows, cols = image.shape[:2]
     dst = np.zeros((rows, cols), np.float32)
-    ycenter, xcenter = rows//2, cols//2
+    ycenter, xcenter = mask.shape[0]//2, mask.shape[1]//2
 
     for i in range(ycenter, rows - ycenter):
         for j in range(xcenter, cols - xcenter):
@@ -19,7 +19,7 @@ def filter(image, mask):
 def filter2(image, mask):
     rows, cols = image.shape[:2]
     dst = np.zeros((rows, cols), np.float32)
-    ycenter, xcenter = rows//2, cols//2
+    ycenter, xcenter = mask.shape[0]//2, mask.shape[1]//2
 
     for i in range(ycenter, rows - ycenter):
         for j in range(xcenter, cols - xcenter):
