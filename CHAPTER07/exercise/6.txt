@@ -1,0 +1,6 @@
+6. 캐니 에지 알고리즘의 과정을 설명하시오.
+
+1) 블러링을 통한 노이즈 제거 (가우시안 블러링)
+2) 화소 기울기(gradient)의 강도와 방향 검출 (소벨 마스크)
+3) 비최대치 억제(non-maximum suppression)
+4) 이력 임계값(hysteresis threshold)으로 에지 결정
